@@ -24,6 +24,12 @@
     {% if site.nav_footer_custom != "" %}
       {{ site.nav_footer_custom }}
     {% endif %} <br />
-    {{site.title}} is a member of <a href="https://acm.illinois.edu"><img style="width: 50%;" src="/assets/images/acm-wordmark.png"/></a>.
+    {% if site.color_scheme and site.color_scheme != "nil" %}
+      {% assign color_scheme = site.color_scheme %}
+    {% else %}
+      {% assign color_scheme = "light" %}
+    {% endif %}
+
+    {{site.title}} is a member of <a href="https://acm.illinois.edu"><img style="width: 50%;" src="/assets/images/acm-wordmark-{{ color_scheme }}.png"/></a>.
   </footer>
 </div>
