@@ -53,6 +53,16 @@
       }
     }
   }
+
+  // Don't display the sidebar footer when the sidebar is gone, since
+  // it says the same thing as the other footer
+  .site-footer {
+    display: none;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
 }
 
 .main {
