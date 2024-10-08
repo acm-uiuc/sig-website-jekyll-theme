@@ -53,6 +53,16 @@
       }
     }
   }
+
+  .site-footer {
+    img {
+      max-width: 100px;
+      @include mq(md) {
+          max-width: none;
+      }
+    }
+  }
+
 }
 
 .main {
