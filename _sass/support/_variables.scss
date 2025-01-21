@@ -81,7 +81,7 @@ $spacers: (
   sp-8: $spacing-unit * 3,
   sp-9: $spacing-unit * 3.5,
   sp-10: $spacing-unit * 4,
-) !default;
+  ) !default;
 $sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
 $sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
 $sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
@@ -103,12 +103,12 @@ $border-color: $grey-lt-100 !default;
 
 $gutter-spacing: $sp-6 !default;
 $gutter-spacing-sm: $sp-4 !default;
-$nav-width: 16.5rem !default;
-$nav-width-md: 15.5rem !default;
+$nav-width: 20.5rem !default;
+$nav-width-md: 19.5rem !default;
 $nav-list-item-height: $sp-6 !default;
 $nav-list-item-height-sm: $sp-8 !default;
 $nav-list-expander-right: true;
-$content-width: 50rem !default;
+$content-width: 60rem !default;
 $header-height: 3.75rem !default;
 $search-results-width: $content-width - $nav-width !default;
 $transition-duration: 400ms;
@@ -121,4 +121,4 @@ $media-queries: (
   md: $content-width,
   lg: $content-width + $nav-width,
   xl: 87.5rem,
-) !default;
+  ) !default;
